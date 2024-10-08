@@ -1,0 +1,16 @@
+--- !ruby/object:Livro
+autor: maria
+titulo: C++ dificil
+isbn: '54322'
+n_paginas: 100
+preco: 1000
+categoria: :programacao
+ 
+--- !ruby/object:Livro
+autor: matheus
+titulo: Bando de dados easy
+isbn: '2994'
+n_paginas: 2000
+preco: 1000
+categoria: :banco_de_dados
+ 
