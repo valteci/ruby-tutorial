@@ -18,6 +18,8 @@ livro2 = Livro.new(
     :banco_de_dados
 )
 
-arq = BancoDeArquivos.new
-arq.salvar livro1
-arq.salvar livro2
+lib = Biblioteca.new
+lib.adicionar livro1
+lib.adicionar livro2
+
+
