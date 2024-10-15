@@ -30,5 +30,5 @@ livro3 = Livro.new(
 lib = Biblioteca.new
 
 
-
+puts livro3
 

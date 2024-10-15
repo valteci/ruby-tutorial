@@ -1,9 +1,9 @@
-class Livro
+class Livro < Midia
 
-  attr_accessor :preco, :categoria, :isbn
-  attr_reader :autor, :titulo
+  attr_accessor :categoria, :isbn
+  attr_reader :autor
 
-  def initialize autor, titulo, isbn, n_paginas, preco, categoria
+  def initialize (autor, titulo, isbn = "1", n_paginas, preco, categoria)
     @autor = autor
     @titulo = titulo
     @isbn = isbn
@@ -16,7 +16,7 @@ class Livro
     puts "Autor: #{@autor}, Titulo: #{@titulo}, isbn: #{@isbn}, n_paginas: #{@n_paginas}, preco: #{@preco}, categoria: #{@categoria}"
   end
 
-  def eql? other
+  def eql?(other)
     puts 'eu rodo!'
     @isbn == other.isbn
   end
