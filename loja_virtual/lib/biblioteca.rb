@@ -1,6 +1,6 @@
 require File.expand_path('loja_virtual/lib/banco_de_arquivos.rb')
 
-class Biblioteca
+class Set
 
   def initialize
     @banco_de_arquivos = BancoDeArquivos.new

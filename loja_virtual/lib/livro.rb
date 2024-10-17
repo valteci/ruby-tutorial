@@ -10,6 +10,7 @@ class Livro < Midia
     @n_paginas = n_paginas
     @preco = preco
     @categoria = categoria
+    @desconto = 0.15
   end
 
   def to_s

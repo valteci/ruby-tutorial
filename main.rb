@@ -1,34 +1,7 @@
-require File.expand_path("./loja_virtual/lib/loja_virtual")
+require File.expand_path('loja_virtual/lib/loja_virtual.rb')
 
-livro1 = Livro.new(
-    'maria',
-    'C++ dificil',
-    '54322',
-    100,
-    1000,
-    :programacao
-)
+livro1 = Livro.new("Maria", "TDD fácil", isbn="1234", 100, 98.99, :test)
+windows = Dvd.new("Windows 11 for dummies", 98.9, :SO)
 
-livro2 = Livro.new(
-    'matheus',
-    'Bando de dados easy',
-    '2994',
-    2000,
-    1000,
-    :banco_de_dados
-)
-
-livro3 = Livro.new(
-    'jose',
-    'Dominando o oracle',
-    '9384',
-    10000,
-    99.33,
-    :banco_de_dados
-)
-
-lib = Biblioteca.new
-
-
-puts livro3
+p windows.valor_com_desconto
 
